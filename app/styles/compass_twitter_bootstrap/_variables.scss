@@ -9,7 +9,7 @@
 
 // Grays
 // -------------------------
-$black:                 #000 !default;
+$black:                 #202020 !default;
 $grayDarker:            #222 !default;
 $grayDark:              #333 !default;
 $gray:                  #555 !default;
@@ -17,6 +17,10 @@ $grayLight:             #999 !default;
 $grayLighter:           #eee !default;
 $white:                 #fff !default;
 
+//Primary Palette
+// -------------------------
+$backgroundYellow:		#f4bd3d !default;
+$lightYellow:			#fce4a8 !default;
 
 // Accent colors
 // -------------------------
@@ -32,8 +36,8 @@ $purple:                #7a43b6 !default;
 
 // Scaffolding
 // -------------------------
-$bodyBackground:        $white !default;
-$textColor:             $grayDark !default;
+$bodyBackground:        $backgroundYellow !default;
+$textColor:             $black !default;
 
 
 // Links
@@ -46,14 +50,18 @@ $linkColorHover:        darken($linkColor, 15%) !default;
 // -------------------------
 $sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
+$serifHeavy:			"ITCFranklinGothicW01-Hv 812689", Arial, sans-serif !default;
+$serifHeavyItalic:		"ITCFranklinGothicW01-Hv 812692", Arial, sans-serif !default;
+$serifMedCond:			"ITCFranklinGothicW01-Md 812698", Arial, sans-serif !default;
+$serifMedCondItalic:	"ITCFranklinGothicW01-Md 812701", Arial, sans-serif !default;
 $monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace !default;
 
 $baseFontSize:          14px !default;
-$baseFontFamily:        $sansFontFamily !default;
+$baseFontFamily:        $serifMedCond !default;
 $baseLineHeight:        20px !default;
-$altFontFamily:         $serifFontFamily !default;
+$altFontFamily:         $serifMedCond !default;
 
-$headingsFontFamily:    inherit !default; // empty to use BS default, $baseFontFamily
+$headingsFontFamily:    $serifHeavy !default; // empty to use BS default, $baseFontFamily
 $headingsFontWeight:    bold !default;    // instead of browser default, bold
 $headingsColor:         inherit !default; // empty to use BS default, $textColor
 
