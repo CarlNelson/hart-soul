@@ -1,0 +1,37 @@
+//
+// Navs
+// --------------------------------------------------
+
+
+// BASE CLASS
+// ----------
+
+.nav {
+  margin: 0 auto;
+  margin-bottom: $baseLineHeight;
+  list-style: none;
+}
+
+// Make links block level
+.nav > li > a {
+  display: block;
+
+}
+.nav > li > a:hover {
+  text-decoration: none;
+  background-color: $grayLighter;
+}
+
+// DISABLED STATES
+// ---------------
+
+// Gray out text
+.nav > .disabled > a {
+  color: $grayLight;
+}
+// Nuke hover effects
+.nav > .disabled > a:hover {
+  text-decoration: none;
+  background-color: transparent;
+  cursor: default;
+}

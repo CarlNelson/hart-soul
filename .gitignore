@@ -1,2 +1,6 @@
 temp
-dist
+app
+test
+.Gruntfile.js
+package.json
+npm-debug.log
