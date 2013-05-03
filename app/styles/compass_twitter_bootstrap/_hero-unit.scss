@@ -43,7 +43,21 @@
 
 footer.hero-unit {
   margin-top: 30px;
-  h2 {
-    color: $black;
+  margin-bottom: 30px;
+  a {
+    cursor: pointer !important;
+    &:hover {
+    text-decoration: none;
+    }
+  }
+  .btn {
+    display: block;
+    &:hover {
+      background-position: 0 -100px;
+    }
+  }
+  h1 {
+    font-size: 5em;
+    padding-bottom: 10px;
   }
 }
